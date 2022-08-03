@@ -1,0 +1,27 @@
+.layout {
+    width: 1366px;
+    height: 768px;
+  
+    display: grid;
+    grid:
+      "sidebar body" 1fr
+      / 30% 80%;
+    gap: 8px;
+  }
+  .sidebar { 
+    grid-area: sidebar; 
+
+    margin : 30px ;
+    padding : 20px ;
+    border : 2px solid rgb(0, 0, 0) ;
+    background-color : rgb(255, 255, 255) ;
+  }
+  .body {
+     grid-area: body; 
+
+     margin : 30px ;
+     padding : 20px ;
+     border : 2px solid rgb(151, 0, 0) ;
+     background-color : rgb(255, 255, 255) ;
+  }
+
