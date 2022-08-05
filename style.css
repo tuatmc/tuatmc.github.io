@@ -1,27 +1,141 @@
-.layout {
-    width: 1366px;
-    height: 768px;
+header{
+  overflow: hidden;
+}
+
+body {
+  margin:0;
+
+  width:auto;
+  max-width: none;
+  min-width:200px;
+
+  min-height: 100vh;
+
+  background-image: url("../resources/background/bricks.png");
+  background-position:center center;
+  image-rendering: pixelated;
+
+  background-size:160px;
+  background-repeat:repeat;
+}
+
+
+.content{
+  max-width: 2000px;
+}
+
+.page {
+  width: 980px;
+  margin: 0 auto;
+}
+.header {
+  height: fit-content;
+  background-color: darkgray;
+}
+.content {
+  width: 680px;
+  float: left;
+  background-color: rgb(255, 255, 255);
+}
+.sidebar {
+  width: 300px;
+  float: right;
+}
+.footer {
+  clear: both;
+}
+img.title
+{
+  margin-top: 1%;
+  width:70%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .page {
+    width: 98%;
+  }
+  .content {
+    width: 70%;
+  }
+  .sidebar {
+    width: 30%;
+  }
+  img.title
+  {
+  width:70%;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .page {
+  }
+  .content {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  img.title
+  {
+    width: 100%;
+  }
+}
+
+
+
+.area {
+  width:initial;
+  flex-wrap: wrap;
+  display: flex;
+}
+.tab_class {
+  width: calc(100%/5);
+  height: 50px;
+  background-color: rgb(202, 202, 202);
+  line-height:20px;
+  font-size: 15px;
+  text-align: center;
   
-    display: grid;
-    grid:
-      "sidebar body" 1fr
-      / 30% 80%;
-    gap: 8px;
-  }
-  .sidebar { 
-    grid-area: sidebar; 
+  display: block;
+  float: left;
+  order: -1;
+}
+input[name="tab_name"] {
+  display: none;
+}
+input:checked + .tab_class {
+  background-color: rgb(102, 189, 184);
+  color: rgb(255, 255, 255);
+}
+.content_class {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+#not_center{
+  text-align: left;
+}
+input:checked + .tab_class + .content_class {
+  display: block;
+}
 
-    margin : 30px ;
-    padding : 20px ;
-    border : 2px solid rgb(0, 0, 0) ;
-    background-color : rgb(255, 255, 255) ;
-  }
-  .body {
-     grid-area: body; 
 
-     margin : 30px ;
-     padding : 20px ;
-     border : 2px solid rgb(151, 0, 0) ;
-     background-color : rgb(255, 255, 255) ;
-  }
+@media screen and (max-width: 1000px) {
+}
 
+@media screen and (max-width: 700px) {
+}
+
+img.saigen{
+  width:96%;
+}
+img.history{
+  width:90%;
+}
+
+.intro{
+  background-color: rgb(51, 51, 51);
+  color:aliceblue;
+}
