@@ -1,62 +1,243 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../parallax.js"></script>
   <title>農工大マイクラ部</title>
+
+  
+
 </head>
+
 <body>
-  <!-- ヘッダとかリンクを全部のhtmlに書いているのはさすがにゴミなのであとでタブ化する -->
-  <header id="header">
-    <div style="text-align: center">
-      <a href="../index.html"><img src="../resources/Header.png" width="800"></a> 
+  <script language="javascript" type="text/javascript" src="../background.js"></script>
+
+    <div class="page">
+
+        <!-- ヘッダとかリンクを全部のhtmlに書いているのはさすがにゴミなのであとでタブ化する -->
+        <header class="header">
+            <div style="text-align: center">
+                <a href="../index.html"><img src="../resources/Header.png" class="title"></a> 
+            </div>
+        </header>
+
+          <!-- 本文 -->
+        <article class="content">
+
+            <div class="intro">
+                <p>非公式サークル・農工大マイクラ部のホームページへようこそ！</p>
+
+                <p>マイクラ部では主にキャンパスをゲーム内に再現する計画や，工業modなどを入れて遊ぶ企画をたてたりしているよ！</p>
+
+                <p>※入部は，部員に直接会ったことのある人のみとしています．怪しい宗教かなにかのようですが，サーバーipなどを扱う関係上ハードウェア的なセキュリティは最低限高めようという指針なのでご了承しろください．</p>
+            </div>
+
+            <div class="area">
+
+              <input type="radio" name="tab_name" id="tab1" onclick="changeBackground('bricks');" checked>
+              <label class="tab_class" for="tab1">  活動  </label>
+              <div class="content_class" id="not_center">
+                <strong>農工大マイクラ部の活動</strong>
+                <p>マイクラ部は好きな時間，好きなタイミングで好き勝手に活動しています．</p>
+                <p>たいていは部員が運営しているサーバーが稼働しているので，
+                  そこで遊んだり，リソースパックやmod，プラグインなどの制作に勤しんでいます．決まった活動というのはなく，完全に自由参加です．</p>
+                <p>(というかマインクラフトをやっている姿を見ない部員すらいます)</p>
+                <p>何をしようがOK！　それが我々の部活です．</p>
+
+                <p>現在稼働中の企画は，農工大工学部再現計画，mod制作計画，生活鯖ひとつです．新企画募集中！</p>
+              </div>
+
+              <input type="radio" name="tab_name" id="tab2" onclick="changeBackground('sand');">
+              <label class="tab_class" for="tab2">  ギャラリー  </label>
+              <div class="content_class">
+                <strong>～農工大マイクラ部の輝かしい歴史～</strong>
+
+                <table border="1" align="center">
+                  <tr>
+                    <th>年月日</th>
+                    <th>鯖のバージョン</th>
+                    <th>できごと</th>
+                  </tr>
+                  <tr>
+                    <td colspan="3">2021</td>
+                  </tr>
+                  <tr>
+                    <td>7-28</td>
+                    <td>1.7.10</td>
+                    <td>
+                      マイクラ部がどこからともなく発生した．はじまりの鯖オープン．
+                      <img src=resources/FirstContact.jpg class="history">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9-11</td>
+                    <td>1.17.1</td>
+                    <td>
+                      統合版とJava版の人が両方入れるバニラ鯖オープン．
+                      だが，絶海の孤島にスポーンしてしまう．
+                      <img src=resources/2021-09-10_22.58.21.png class="history">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9-18</td>
+                    <td>1.12.2</td>
+                    <td>
+                      はじまりの鯖が悲しくもほぼ開かなくなったので，新工業鯖のオープン
+                      <img src=resources/plastip.png class="history">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9-21</td>
+                    <td>1.12.1</td>
+                    <td>
+                      違法建築計画浮上．
+                      しかし色々と計画の詰めが甘く３日で過疎る．
+                      <img src=resources/illegal.jpg class="history">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9-28</td>
+                    <td>1.17.1</td>
+                    <td>
+                      農工大再現計画始動
+                      <img src=resources/2021-11-28_00.05.50.png class="history">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10-30</td>
+                    <td>1.10</td>
+                    <td>
+                      有名配布ワールド，The Unusual Skyblockの計画が浮上．
+                      しかし新学期に入り若干名の中毒者をのぞくほとんどのメンバーが参加できず数日で消滅．
+                      いつかリベンジしたいものである．
+                      <img src=resources/2021-10-30_00.08.38.png class="history">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">2022年</td>
+                  </tr>
+                  <tr>
+                    <td>1-1</td>
+                    <td>1.17.1</td>
+                    <td>
+                      マイクラ部，初めての新年を迎える．
+                      <img src=resources/newyear.jpg class="history">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2-10</td>
+                    <td>1.12.2</td>
+                    <td>
+                      冬休み以前より議論されていたSevtech攻略計画，開始．
+                      鯖もクライアントも重すぎて攻略以前の部分が色々問題に．
+                      <img src=resources/2022-02-11_01.34.25.png class="history">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5-8</td>
+                    <td>1.12.2</td>
+                    <td>
+                      Sevtechの全実績解除，ラスボスの討伐．
+                      ところでSevのラスボス君，よわすぎない？
+                      <img src=resources/2022-05-08_23.28.20.png class="history">
+                    </td>
+                  </tr>
+                </table>
+
+              </div>
+
+              <input type="radio" name="tab_name" id="tab3" onclick="changeBackground('iron');">
+              <label class="tab_class" for="tab3">  キャンパス再現 </label>
+              <div class="content_class">
+                  <strong>農工大工学部再現計画</strong>
+                  再現計画の現状
+                  <br data-mce-bogus="1">
+                  </p>
+                  <div style="text-align: center">
+                      <img src="resources/NOKOcraft_2022-7-6.png" class="saigen">
+                      <p>
+                        <br data-mce-bogus="1">
+                      </p>
+                      <p>
+                        現在工事中<br data-mce-bogus="1">
+                      </p>
+                  </div>
+              </div>
+
+              <input type="radio" name="tab_name" id="tab4" onclick="changeBackground('deep');">
+              <label class="tab_class" for="tab4">  Mod  </label>
+              <div class="content_class">
+                <p>
+                  <strong>Minecraft ForgeのMod制作をしてみよう</strong>
+                  Modの作り方をここにまとめる？
+                  <br data-mce-bogus="1">
+                </p>
+                <p>
+                  目次<br data-mce-bogus="1">
+                  <div id = "tablist">
+                      <ul id = "tablist">
+                        <li>
+                          <a href="../index.html">ホーム</a>
+                        </li>  
+                      </ul>
+                    </div>  
+                </p>
+                <p>
+                  <br data-mce-bogus="1">
+                </p>
+                <p>
+                  現在工事中<br data-mce-bogus="1">
+                </p>
+                
+              </div>
+
+              <input type="radio" name="tab_name" id="tab5" onclick="changeBackground('barrel');">
+              <label class="tab_class" for="tab5">  リソースパック  </label>
+              <div class="content_class">
+                <p>
+                  <strong>Minecraft改造の第一歩！　リソースパックを作ってアイテムやブロックの見た目を変更してみよう</strong>
+                  リソースパックの簡単な作り方とかをここにまとめる？
+                  <br data-mce-bogus="1">
+                </p>
+                <p>
+                  目次<br data-mce-bogus="1">
+                  <div id = "tablist">
+                      <ul id = "tablist">
+                        <li>
+                          <a href="../index.html">ホーム</a>
+                        </li>  
+                      </ul>
+                    </div>  
+                </p>
+                <p>
+                  <br data-mce-bogus="1">
+                </p>
+                <p>
+                  現在工事中<br data-mce-bogus="1">
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+
+
+        <!-- サイドバー -->
+        <aside class="sidebar">
+            <a class="twitter-timeline" data-lang="ja" data-height="600" data-theme="light" href="https://twitter.com/mctuat?ref_src=twsrc%5Etfw">
+              Tweets by mctuat</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+              </script>
+        </aside>
+
+        <footer class="footer"></footer>
+
     </div>
-  </header>
 
-  <div style="text-align: center">
-    <img src="../resources/NiceBoat.png" width="600">
-  </div>
-
-  <!-- サイドバー -->
-  <section class="layout">
-    <div class="sidebar">
-      <div id = "tablist">
-        <ul id = "tablist">
-          <li>
-            <a href="../index.html">ホーム</a>
-          </li>  
-          <li>
-            <a href="../history.html">マイクラ部の歴史</a>
-          </li>
-          <li>
-            <a href="../rec_resourcepack/resourcepack.html">リソースパックを作ろう！</a>
-          </li>
-          <li>
-            <a href="../rec_forgemod/forgemod.html">Forge Modを作ろう！</a>
-          </li>
-          <li>
-            <a href="../project_campus.html">農工大再現計画</a>
-          </li>  
-        </ul>
-      </div>  
-      <a class="twitter-timeline" data-lang="ja" data-width="512" data-height="1024" data-theme="light" href="https://twitter.com/mctuat?ref_src=twsrc%5Etfw">
-        Tweets by mctuat</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-        </script>
-    </div>
-
-    <!-- 本文 -->
-    <div class="body">
-      <p>非公式サークル・農工大マイクラ部のホームページへようこそ！</p>
-
-      <p>マイクラ部では主にキャンパスをゲーム内に再現する計画や，工業modなどを入れて遊ぶ企画をたてたりしているよ！</p>
-
-      <p>※入部は，部員に直接会ったことのある人のみとしています．怪しい宗教かなにかのようですが，サーバーipなどを扱う関係上ハードウェア的なセキュリティは最低限高めようという指針なのでご了承しろください．</p>
-      
-      <p></p>
-
-    </div>
-
-  </section>
 </body>
 </html>
