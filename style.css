@@ -79,14 +79,14 @@ img.title
   .page {
   }
   .content {
-    width: 100%;
+    width: 540px;
   }
   .sidebar {
-    width: 100%;
+    width: 540px;
   }
   img.title
   {
-    width: 100%;
+    width: 540px;
   }
 }
 
