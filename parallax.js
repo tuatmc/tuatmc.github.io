@@ -2,13 +2,13 @@
 
 	'use strict';
     
-    let scrollPosi = 20;
+    let scrollPosi = 10;
 
 	$(window).scroll(function () {
 		scrollPosi = $(document).scrollTop();
         
         $('body').stop(true, true).animate({
-			'background-position-y': -scrollPosi / 10 + 'px'
+			'background-position': -scrollPosi * 0.1 + 'px'
 		}, 100);
 	});
 
