@@ -90,7 +90,7 @@ img.title
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 580px) {
   .sidebar {
     width: 50%;
   }
