@@ -13,8 +13,7 @@ body {
 
   background-image: url("../resources/background/bricks.png");
   background-position:center center;
-  image-rendering: pixelated;
-  image-rendering: -webkit-optimize-contrast;
+  image-rendering:crisp-edges;
 
   background-size:160px;
   background-repeat:repeat;
