@@ -14,6 +14,7 @@ body {
   background-image: url("../resources/background/bricks.png");
   background-position:center center;
   image-rendering: pixelated;
+  image-rendering: -webkit-optimize-contrast;
 
   background-size:160px;
   background-repeat:repeat;
@@ -40,7 +41,7 @@ footer{
 .content {
   width: 680px;
   float: left;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.904);
 }
 .sidebar {
   width: 300px;
@@ -154,3 +155,19 @@ img.history{
   font-size: 10.5pt !important;
   line-height: 14pt!important;
   }
+
+.SandboxRoot.env-bp-660 .timeline-Tweet-text {
+  font-size: 10.5pt !important;
+  line-height: 14pt!important;
+  }
+
+.SandboxRoot.env-bp-550 .timeline-Tweet-text {
+  font-size: 10.5pt !important;
+  line-height: 14pt!important;
+  }
+
+.SandboxRoot.is-touch .timeline-Tweet-text {
+    font-size: 10.5pt !important;
+    line-height: 14pt!important;
+}
+  
