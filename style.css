@@ -18,6 +18,7 @@ body {
 
   background-size:160px;
   background-repeat:repeat;
+  
 }
 
 footer{
@@ -36,12 +37,13 @@ footer{
 .header {
   height: fit-content;
   background-color: rgba(169, 169, 169, 0.61);
-
+  border-radius: 5px;
 }
 .content {
   width: 680px;
   float: left;
   background-color: rgba(255, 255, 255, 0.733);
+  border-radius: 5px;
 }
 .sidebar {
   width: 300px;
@@ -107,18 +109,23 @@ img.title
   display: block;
   float: left;
   order: -1;
+
+
+  border-radius: 30px;
 }
 input[name="tab_name"] {
   display: none;
 }
 input:checked + .tab_class {
   background-color: rgb(102, 189, 184);
+
   color: rgb(255, 255, 255);
 }
 .content_class {
   display: none;
   width: 100%;
   text-align: center;
+
 }
 #not_center{
   text-align: left;
@@ -173,4 +180,18 @@ img.history{
   
 .twitter_timeline{
   width:100%
+}
+
+.text{
+
+  vertical-align: middle;
+
+
+}
+.button_text{
+  height: 100%;
+
+  line-height: 100%;
+
+  align-items: center;
 }
