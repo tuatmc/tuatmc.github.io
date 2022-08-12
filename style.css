@@ -3,6 +3,9 @@ header{
 }
 
 body {
+
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+
   margin:0;
 
   width:auto;
@@ -98,12 +101,15 @@ img.title
 }
 .tab_class {
   width: calc(100%/5);
-  height: 50px;
+
+  height:30px;
+  padding-top: 10px;  
+
   background-color: rgb(202, 202, 202);
-  line-height:20px;
+  line-height:15px;
   font-size: 15px;
-  text-align: center;
-  
+  text-align:center;
+    
   display: block;
   float: left;
   order: -1;
@@ -137,6 +143,10 @@ input:checked + .tab_class + .content_class {
 }
 
 @media screen and (max-width: 700px) {
+  .tab_class {
+  height:40px;
+  padding-top: 10px;  
+  }
 }
 
 img.saigen{
