@@ -1,1 +1,1 @@
-# [https://tuatmc.github.io/](https://tuatmc.github.io/ "移動")
+# [tuatmc.github.io](https://tuatmc.github.io/ "移動")
