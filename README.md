@@ -1,1 +1,1 @@
-# [tuatmc.github.io](tuatmc.github.io "ページに移動")
+# [https://tuatmc.github.io/](https://tuatmc.github.io/ "移動")
